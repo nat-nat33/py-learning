@@ -13,6 +13,6 @@ while True:
 	message = client.recv(1024).decode();
 	print(message);
 	#reply = "You asked " + message
-	client.send("HTTP/1.0 200 Not Found\r\n".encode());
+	client.send("HTTP/1.0 200 OK\r\n".encode());
 	client.close();
 
